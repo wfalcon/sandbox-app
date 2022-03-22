@@ -1,8 +1,8 @@
-import React from 'react';
-// import logo from './logo.svg';
+
 import './App.css';
 import TodoItem from './component/TodoItem/TodoItem';
 import todosData from './todosData';
+
 
 function App() {
   const todoItems = todosData.map(item => <TodoItem key={item.id} item={item}/>)

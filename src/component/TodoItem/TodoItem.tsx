@@ -1,12 +1,14 @@
-import React from 'react';
+
+import { useState } from "react";
+import todosData from "../../todosData";
 import "./TodoItem.css"
-import todosData from '../../todosData';
 
 
 function TodoItem(props: any) {
+  const [todosCompleted, setTodosComplited] = useState(props.item.completed)
   return (
    <div className='todo-item'>
-     <input type="checkbox" checked={props.item.completed}/>
+     <input type="checkbox" checked={todosCompleted} onChange={()=>setTodosComplited(!todosCompleted)}/>
      <p>{props.item.text}</p>
    </div>
   );
