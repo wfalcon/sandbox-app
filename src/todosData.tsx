@@ -2,27 +2,27 @@
 const todosData = [
     {
         id: 1,
-        text: "Take out the trash",
+        text: "Вынести мусор",
         completed: true
     },
     {
         id: 2,
-        text: "Grocery shopping",
+        text: "Купить продукты",
         completed: false
     },
     {
         id: 3,
-        text: "Clean gecko tank",
+        text: "Настроить сервер",
         completed: false
     },
     {
         id: 4,
-        text: "Mow lawn",
+        text: "Помыть машину",
         completed: true
     },
     {
         id: 5,
-        text: "Catch up on Arrested Development",
+        text: "Сходить на тренировку",
         completed: false
     }
 ]

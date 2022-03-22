@@ -11,6 +11,21 @@
     color: #333333;
 }
 
+.todo-item-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 20px 0;
+    width: 70%;
+    border-bottom: 1px solid #cecece;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: #020202;
+    background-color: #e6c9c9;
+}
+
+
 input[type=checkbox] {
     margin-right: 10px;
     font-size: 30px;
