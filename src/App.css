@@ -1,9 +1,9 @@
 body {
-  background-color: whitesmoke;
+  background-color: rgb(110, 108, 108);
 }
 
 .todo-list {
-  background-color: white;
+  background-color: rgb(243, 243, 176);
   margin: auto;
   width: 50%;
   display: flex;
@@ -14,12 +14,16 @@ body {
   /* The top layer shadow */
       0 1px 1px rgba(0,0,0,0.15),
           /* The second layer */
-      0 10px 0 -5px #eee,
+      0 10px 0 -5px rgb(94, 189, 245),
           /* The second layer shadow */
       0 10px 1px -4px rgba(0,0,0,0.15),
           /* The third layer */
-      0 20px 0 -10px #eee,
+      0 20px 0 -10px rgb(110, 230, 120),
           /* The third layer shadow */
       0 20px 1px -9px rgba(0,0,0,0.15);
   padding: 30px;
+}
+
+.todolist {
+    color: cadetblue;
 }

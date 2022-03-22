@@ -25,6 +25,9 @@
     background-color: #acc2f0;
 }
 
+.through {
+    text-decoration: line-through;
+}
 
 input[type=checkbox] {
     margin-right: 10px;
