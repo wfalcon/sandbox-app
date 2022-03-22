@@ -11,7 +11,7 @@
     color: #333333;
 }
 
-.todo-item-1 {
+.todo-item-highlight {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -22,7 +22,7 @@
     font-weight: 100;
     font-size: 15px;
     color: #020202;
-    background-color: #e6c9c9;
+    background-color: #acc2f0;
 }
 
 
