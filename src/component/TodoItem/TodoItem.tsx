@@ -1,6 +1,8 @@
 
 import { useState } from "react";
+import MyButton from "../UI/button/MyButton";
 import "./TodoItem.css"
+import "../UI/button/MyButton.css"
 
 
 function TodoItem(props: any) {
@@ -10,16 +12,18 @@ function TodoItem(props: any) {
 
 
   return (
-   <div onClick={()=>((setTodosComplited(!todosCompleted),
-    console.log(todosCompleted, props.item.id)))}
+   <div 
     onMouseOver={() => setTodoClass('todo-item-highlight')}
     onMouseOut={() => setTodoClass('todo-item')}
     className={todoClass}>
 
-  <input type="checkbox" checked={todosCompleted} onChange={()=>{}} /> {/* onChange={()=>(setTodosComplited(!todosCompleted), console.log(todosCompleted))} /> */}
+  <input type="checkbox"
+   checked={todosCompleted}
+   onChange={()=>((setTodosComplited(!todosCompleted),
+   console.log(!todosCompleted, props.item.id)))} />
      
   <p className={todosCompleted ? "through" : ""} >{props.item.text}</p>
-     
+    <MyButton className="myBtn"title="удалить"/>
    </div>
   );
 }

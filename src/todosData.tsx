@@ -24,6 +24,11 @@ const todosData = [
         id: 5,
         text: "Сходить на тренировку",
         completed: false
+    },
+    {
+        id: 6,
+        text: "Сходить на работу",
+        completed: false
     }
 ]
 
