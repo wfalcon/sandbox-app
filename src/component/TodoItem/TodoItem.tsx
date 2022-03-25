@@ -3,6 +3,7 @@ import { useState } from "react";
 import MyButton from "../UI/button/MyButton";
 import "./TodoItem.css"
 import "../UI/button/MyButton.css"
+import { title } from "process";
 
 
 function TodoItem(props: any) {
@@ -10,6 +11,9 @@ function TodoItem(props: any) {
 
   const [todoClass, setTodoClass] = useState('todo-item')
 
+  function delItem(props: any) {
+    
+  }
 
   return (
    <div 
@@ -23,7 +27,7 @@ function TodoItem(props: any) {
    console.log(!todosCompleted, props.item.id)))} />
      
   <p className={todosCompleted ? "through" : ""} >{props.item.text}</p>
-    <MyButton className="myBtn"title="удалить"/>
+    <MyButton className="myBtn" title="удалить" onClick={()=>console.log('button')}/>
    </div>
   );
 }
